@@ -1,0 +1,72 @@
+#!/usr/bin/env Rscript
+
+cv_results <- readRDS("CV_results.Rdata")
+top_num <- sapply(cv_results,function(l){return(l$top_num)})
+err <- sapply(cv_results,function(l){return(l$err)})
+min_err_ind <- which.min(err)
+auc <- sapply(cv_results,function(l){return(l$auc)})
+max_auc_ind <- which.max(auc)
+
+#Plot AUC
+png("CV_AUC.plot.png")
+plot(top_num*2,auc,main="Cross validation: Maximizing AUC",xlab="# top genes",ylab="CV mean AUC",type='o')
+text(top_num[max_auc_ind]*2,
+     auc[max_auc_ind],
+     paste(top_num[max_auc_ind]*2,", ",round(auc[max_auc_ind],3),sep=''),
+     pos=4
+     )
+dev.off()
+
+#Plot error
+png("CV_Err.plot.png")
+plot(top_num*2,err,main="Cross validation: Minimizing error",xlab="# top genes",ylab="CV mean error",type='o')
+text(top_num[min_err_ind]*2,
+     err[min_err_ind],
+     paste(top_num[min_err_ind]*2,", ",round(err[min_err_ind],3),sep=''),
+     pos=4
+     )
+dev.off()
+
+#Best predictor by AUC
+png("DEG_under_max_AUC.plot.png",width=800,height=450)
+par(mfrow=c(1,2))
+up_deg_table.auc <- cv_results[[max_auc_ind]]$up_deg_table
+up_deg_table.auc <- sort(up_deg_table,decreasing=TRUE)
+plot(up_deg_table.auc,main="AUC: Up regulated DEG",xlab="probe id",ylab="count")
+abline(v=top_num[max_auc_ind],col="red")
+down_deg_table.auc <- cv_results[[max_auc_ind]]$down_deg_table
+down_deg_table.auc <- sort(down_deg_table.auc,decreasing=TRUE)
+plot(down_deg_table.auc,main="AUC: Down regulated DEG",xlab="probe id",ylab="count")
+abline(v=top_num[max_auc_ind],col="red")
+dev.off()
+write(c(names(up_deg_table.auc[1:top_num[max_auc_ind]]),
+        names(down_deg_table.auc[1:top_num[max_auc_ind]])
+        ),
+      paste("DEG_under_max_AUC.n",
+            top_num[max_auc_ind],
+            ".probeid.txt",
+            sep=''
+            )
+      )
+
+#Best predictor by Error
+png("DEG_under_min_err.plot.png",width=800,height=450)
+par(mfrow=c(1,2))
+up_deg_table.err <- cv_results[[min_err_ind]]$up_deg_table
+up_deg_table.err <- sort(up_deg_table.err,decreasing=TRUE)
+plot(up_deg_table.err,main="Error: Up regulated DEG",xlab="probe id",ylab="count")
+abline(v=top_num[min_err_ind],col="red")
+down_deg_table.err <- cv_results[[min_err_ind]]$down_deg_table
+down_deg_table.err <- sort(down_deg_table.err,decreasing=TRUE)
+plot(down_deg_table.err,main="Error: Down regulated DEG",xlab="probe id",ylab="count")
+abline(v=top_num[min_err_ind],col="red")
+dev.off()
+write(c(names(up_deg_table.err[1:top_num[min_err_ind]]),
+        names(down_deg_table.err[1:top_num[min_err_ind]])
+        ),
+      paste("DEG_under_min_err.n",
+            top_num[min_err_ind],
+            ".probeid.txt",
+            sep=''
+            )
+      )

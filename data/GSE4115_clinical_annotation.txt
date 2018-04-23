@@ -1,0 +1,193 @@
+CANCER_STATUS	GEO_ACCESSION	AGE	GENDER	SMOKING_STATUS	PACK_YEARS	DIAG_BRONCH	MASS_SIZE	BIOMARKER_SCORE	PRETEST_PROBABILITY
+GSM93997	No Cancer	GSM93997	age: 34	gender: M	smoking_status: quit less than 10 years	packyears: 17	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -2.253539513	subjective_assessment: Low
+GSM94019	Cancer	GSM94019	age: 63	gender: M	smoking_status: quit less than 10 years	packyears: 75	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 8.900589388	subjective_assessment: High
+GSM94020	Cancer	GSM94020	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94021	Cancer	GSM94021	age: 69	gender: M	smoking_status: quit for 10 years or greater	packyears: 70	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.460146301	subjective_assessment: High
+GSM94022	Cancer	GSM94022	age: 61	gender: M	smoking_status: quit less than 10 years	packyears: 80	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 1.543728029	subjective_assessment: High
+GSM94023	Cancer	GSM94023	age: 49	gender: M	smoking_status: quit less than 10 years	packyears: 20	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.108852816	subjective_assessment: High
+GSM94024	Cancer	GSM94024	age: 59	gender: M	smoking_status: quit less than 10 years	packyears: 120	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 6.07506985	subjective_assessment: High
+GSM94025	Cancer	GSM94025	age: 69	gender: M	smoking_status: quit less than 10 years	packyears: 80	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -4.418126219	subjective_assessment: High
+GSM94026	Cancer	GSM94026	age: 68	gender: M	smoking_status: quit for 10 years or greater	packyears: 70	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -1.380706637	subjective_assessment: High
+GSM94027	Cancer	GSM94027	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 50	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -5.738093914	subjective_assessment: High
+GSM94028	Cancer	GSM94028	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94029	Cancer	GSM94029	age: 64	gender: M	smoking_status: quit less than 10 years	packyears: 70.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.143940976	subjective_assessment: Medium
+GSM94030	Cancer	GSM94030	age: 67	gender: M	smoking_status: quit for 10 years or greater	packyears: 4.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -2.850428159	subjective_assessment: Medium
+GSM94031	Cancer	GSM94031	age: 74	gender: M	smoking_status: quit less than 10 years	packyears: 76	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.5870172	subjective_assessment: High
+GSM94032	Cancer	GSM94032	age: 60	gender: F	smoking_status: quit less than 10 years	packyears: 46	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.147028091	subjective_assessment: High
+GSM94033	Cancer	GSM94033	age: 50	gender: M	smoking_status: quit less than 10 years	packyears: 76	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 11.90888493	subjective_assessment: High
+GSM94034	Cancer	GSM94034	age: 68	gender: F	smoking_status: quit less than 10 years	packyears: 49	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -4.593100238	subjective_assessment: High
+GSM94035	Cancer	GSM94035	age: 62	gender: F	smoking_status: quit for 10 years or greater	packyears: 38	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 7.59128222	subjective_assessment: Medium
+GSM94036	Cancer	GSM94036	age: 55	gender: F	smoking_status: quit less than 10 years	packyears: 35	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -2.164748341	subjective_assessment: High
+GSM94037	Cancer	GSM94037	age: 65	gender: F	smoking_status: quit less than 10 years	packyears: 50	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -13.35876169	subjective_assessment: High
+GSM94038	Cancer	GSM94038	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94039	Cancer	GSM94039	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94040	Cancer	GSM94040	age: 75	gender: M	smoking_status: quit less than 10 years	packyears: 60	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -7.403655844	subjective_assessment: High
+GSM94041	Cancer	GSM94041	age: 65	gender: F	smoking_status: quit less than 10 years	packyears: 47	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 1.413498838	subjective_assessment: High
+GSM94042	Cancer	GSM94042	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94043	Cancer	GSM94043	age: 62	gender: M	smoking_status: quit for 10 years or greater	packyears: 120	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 8.020396033	subjective_assessment: High
+GSM94044	Cancer	GSM94044	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94045	Cancer	GSM94045	age: 73	gender: M	smoking_status: quit for 10 years or greater	packyears: 50	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -15.97549696	subjective_assessment: High
+GSM94046	Cancer	GSM94046	age: 52	gender: M	smoking_status: quit less than 10 years	packyears: 20	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -10.26034292	subjective_assessment: High
+GSM94047	Cancer	GSM94047	age: 79	gender: M	smoking_status: quit for 10 years or greater	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 0.49773056	subjective_assessment: High
+GSM94048	Cancer	GSM94048	age: 59	gender: M	smoking_status: quit for 10 years or greater	packyears: 20	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -2.451710321	subjective_assessment: High
+GSM94049	Cancer	GSM94049	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 38	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -7.42492074	subjective_assessment: High
+GSM94050	Cancer	GSM94050	age: 69	gender: F	smoking_status: quit less than 10 years	packyears: 100	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -5.144074176	subjective_assessment: High
+GSM94051	Cancer	GSM94051	age: 75	gender: M	smoking_status: quit less than 10 years	packyears: 55	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -3.12440852	subjective_assessment: High
+GSM94052	Cancer	GSM94052	age: 68	gender: M	smoking_status: quit less than 10 years	packyears: 63	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -7.221080172	subjective_assessment: High
+GSM94053	Cancer	GSM94053	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94054	Cancer	GSM94054	age: 57	gender: M	smoking_status: quit less than 10 years	packyears: 54	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -14.70966738	subjective_assessment: High
+GSM94055	Cancer	GSM94055	age: 59	gender: M	smoking_status: quit less than 10 years	packyears: 43	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -11.5763694	subjective_assessment: High
+GSM94056	Cancer	GSM94056	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 42	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 0.53017948	subjective_assessment: High
+GSM94057	Cancer	GSM94057	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94058	Cancer	GSM94058	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 60	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -10.79031001	subjective_assessment: Medium
+GSM94059	Cancer	GSM94059	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 50	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -16.90948911	subjective_assessment: High
+GSM94060	Cancer	GSM94060	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94061	Cancer	GSM94061	age: 76	gender: F	smoking_status: quit less than 10 years	packyears: 75	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -13.1690371	subjective_assessment: High
+GSM94062	Cancer	GSM94062	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94063	Cancer	GSM94063	age: 66	gender: F	smoking_status: quit for 10 years or greater	packyears: 60	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 5.887508248	subjective_assessment: High
+GSM94064	Cancer	GSM94064	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94065	Cancer	GSM94065	age: 70	gender: M	smoking_status: quit less than 10 years	packyears: 23	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -10.53684544	subjective_assessment: Medium
+GSM94066	Cancer	GSM94066	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94067	Cancer	GSM94067	age: 59	gender: M	smoking_status: quit less than 10 years	packyears: 43	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -15.28768334	subjective_assessment: High
+GSM94068	Cancer	GSM94068	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94069	Cancer	GSM94069	age: 75	gender: M	smoking_status: quit for 10 years or greater	packyears: 100	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -11.19576422	subjective_assessment: High
+GSM94070	Cancer	GSM94070	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94071	Cancer	GSM94071	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 113	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -9.912419582	subjective_assessment: High
+GSM94072	Cancer	GSM94072	age: 42	gender: F	smoking_status: quit less than 10 years	packyears: 37	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -5.342972851	subjective_assessment: High
+GSM94073	Cancer	GSM94073	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 71	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 0.04176442	subjective_assessment: High
+GSM94074	Cancer	GSM94074	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -11.31806968	subjective_assessment: Medium
+GSM94075	Cancer	GSM94075	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 29	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -8.731521462	subjective_assessment: High
+GSM94077	No Cancer	GSM94077	age: 48	gender: M	smoking_status: quit less than 10 years	packyears: 21	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 14.29958847	subjective_assessment: Low
+GSM94078	No Cancer	GSM94078	age: 27	gender: F	smoking_status: quit less than 10 years	packyears: 0.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 14.66417984	subjective_assessment: Low
+GSM94079	No Cancer	GSM94079	age: 23	gender: M	smoking_status: quit less than 10 years	packyears: 7	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 8.317278064	subjective_assessment: Low
+GSM94080	No Cancer	GSM94080	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94081	No Cancer	GSM94081	age: 38	gender: M	smoking_status: quit less than 10 years	packyears: 28	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.69902284	subjective_assessment: Low
+GSM94082	No Cancer	GSM94082	age: 39	gender: F	smoking_status: quit less than 10 years	packyears: 23	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 8.361388565	subjective_assessment: Low
+GSM94083	No Cancer	GSM94083	age: 39	gender: M	smoking_status: quit less than 10 years	packyears: 9.2	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 7.17079798	subjective_assessment: Low
+GSM94084	No Cancer	GSM94084	age: 40	gender: F	smoking_status: quit less than 10 years	packyears: 30	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 16.85808653	subjective_assessment: Low
+GSM94085	No Cancer	GSM94085	age: 39	gender: M	smoking_status: quit less than 10 years	packyears: 20	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 13.56306001	subjective_assessment: Low
+GSM94086	No Cancer	GSM94086	age: 43	gender: M	smoking_status: quit less than 10 years	packyears: 10	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.723118683	subjective_assessment: Low
+GSM94087	No Cancer	GSM94087	age: 38	gender: M	smoking_status: quit less than 10 years	packyears: 21.75	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 4.716773595	subjective_assessment: Low
+GSM94088	No Cancer	GSM94088	age: 26	gender: F	smoking_status: quit less than 10 years	packyears: 22.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 14.65426045	subjective_assessment: Low
+GSM94089	No Cancer	GSM94089	age: 45	gender: F	smoking_status: quit less than 10 years	packyears: 2	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 18.87983271	subjective_assessment: Low
+GSM94090	No Cancer	GSM94090	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94091	No Cancer	GSM94091	age: 39	gender: M	smoking_status: quit less than 10 years	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 9.915661899	subjective_assessment: Low
+GSM94092	No Cancer	GSM94092	age: 50	gender: M	smoking_status: quit for 10 years or greater	packyears: 8.25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 13.28878453	subjective_assessment: Low
+GSM94093	No Cancer	GSM94093	age: 41	gender: M	smoking_status: quit less than 10 years	packyears: 28.25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 1.74604158	subjective_assessment: Low
+GSM94094	No Cancer	GSM94094	age: 37	gender: M	smoking_status: quit less than 10 years	packyears: 19	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.04778774	subjective_assessment: Low
+GSM94095	No Cancer	GSM94095	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 20.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 9.5892435	subjective_assessment: Low
+GSM94096	No Cancer	GSM94096	age: 71	gender: M	smoking_status: quit less than 10 years	packyears: 56	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 11.81656677	subjective_assessment: Medium
+GSM94097	No Cancer	GSM94097	age: 32	gender: M	smoking_status: quit less than 10 years	packyears: 2	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 1.866867649	subjective_assessment: Low
+GSM94098	No Cancer	GSM94098	age: 33	gender: M	smoking_status: quit less than 10 years	packyears: 3.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 5.150785898	subjective_assessment: Low
+GSM94099	No Cancer	GSM94099	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 9.75	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 11.41410811	subjective_assessment: Low
+GSM94100	No Cancer	GSM94100	age: 62	gender: M	smoking_status: quit less than 10 years	packyears: 47.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.67150199	subjective_assessment: Low
+GSM94101	No Cancer	GSM94101	age: 42	gender: M	smoking_status: quit less than 10 years	packyears: 1	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 16.7045616	subjective_assessment: Low
+GSM94102	No Cancer	GSM94102	age: 73	gender: M	smoking_status: quit less than 10 years	packyears: 51	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 2.330252074	subjective_assessment: High
+GSM94103	No Cancer	GSM94103	age: 43	gender: F	smoking_status: quit for 10 years or greater	packyears: 7	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.57939665	subjective_assessment: Low
+GSM94104	No Cancer	GSM94104	age: 42	gender: F	smoking_status: quit less than 10 years	packyears: 28	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 17.20623604	subjective_assessment: Low
+GSM94105	No Cancer	GSM94105	age: 30	gender: M	smoking_status: quit less than 10 years	packyears: 4	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 0.623426042	subjective_assessment: Low
+GSM94106	No Cancer	GSM94106	age: 36	gender: M	smoking_status: quit less than 10 years	packyears: 4	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 11.37254743	subjective_assessment: Low
+GSM94107	No Cancer	GSM94107	age: 54	gender: M	smoking_status: quit less than 10 years	packyears: 90	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.78719007	subjective_assessment: Medium
+GSM94108	No Cancer	GSM94108	age: 40	gender: F	smoking_status: quit for 10 years or greater	packyears: 5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 18.03022458	subjective_assessment: Low
+GSM94109	No Cancer	GSM94109	age: 53	gender: M	smoking_status: quit less than 10 years	packyears: 40	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 3.178523351	subjective_assessment: Medium
+GSM94110	No Cancer	GSM94110	age: 27	gender: M	smoking_status: quit less than 10 years	packyears: 8.13	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 16.21861408	subjective_assessment: Low
+GSM94111	No Cancer	GSM94111	age: 56	gender: M	smoking_status: quit less than 10 years	packyears: 42	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 4.90543966	subjective_assessment: High
+GSM94112	No Cancer	GSM94112	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94113	No Cancer	GSM94113	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94114	No Cancer	GSM94114	age: 38	gender: M	smoking_status: quit less than 10 years	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 5.566047313	subjective_assessment: Low
+GSM94115	No Cancer	GSM94115	age: 40	gender: M	smoking_status: quit less than 10 years	packyears: 21	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 3.406248202	subjective_assessment: Low
+GSM94116	No Cancer	GSM94116	age: 37	gender: F	smoking_status: quit less than 10 years	packyears: 13	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 11.27391608	subjective_assessment: Low
+GSM94117	No Cancer	GSM94117	age: 55	gender: M	smoking_status: quit for 10 years or greater	packyears: 10	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 4.475014988	subjective_assessment: Medium
+GSM94118	No Cancer	GSM94118	age: 26	gender: F	smoking_status: quit less than 10 years	packyears: 1.1	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.64213631	subjective_assessment: Low
+GSM94119	No Cancer	GSM94119	age: 75	gender: F	smoking_status: quit less than 10 years	packyears: 23	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 9.220006224	subjective_assessment: Low
+GSM94120	No Cancer	GSM94120	age: 54	gender: F	smoking_status: quit for 10 years or greater	packyears: 90	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 9.772707211	subjective_assessment: Low
+GSM94121	No Cancer	GSM94121	age: 59	gender: M	smoking_status: quit for 10 years or greater	packyears: 13	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 7.509526403	subjective_assessment: Low
+GSM94122	No Cancer	GSM94122	age: 59	gender: M	smoking_status: quit less than 10 years	packyears: 100	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 15.71099269	subjective_assessment: Medium
+GSM94123	No Cancer	GSM94123	age: 59	gender: M	smoking_status: quit less than 10 years	packyears: 70.5	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -8.001319583	subjective_assessment: Medium
+GSM94124	No Cancer	GSM94124	age: 35	gender: F	smoking_status: quit less than 10 years	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 15.71911599	subjective_assessment: Low
+GSM94125	No Cancer	GSM94125	age: 71	gender: M	smoking_status: quit for 10 years or greater	packyears: 70	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 13.70211637	subjective_assessment: Medium
+GSM94126	No Cancer	GSM94126	age: 23	gender: M	smoking_status: quit less than 10 years	packyears: 7	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -6.562949875	subjective_assessment: Low
+GSM94127	No Cancer	GSM94127	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 50	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -9.83020824	subjective_assessment: Medium
+GSM94128	No Cancer	GSM94128	age: 69	gender: M	smoking_status: quit less than 10 years	packyears: 30	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.611648468	subjective_assessment: Medium
+GSM94129	No Cancer	GSM94129	age: 49	gender: M	smoking_status: quit less than 10 years	packyears: 0.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 5.457789764	subjective_assessment: Medium
+GSM94130	No Cancer	GSM94130	age: 59	gender: F	smoking_status: quit for 10 years or greater	packyears: 5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -4.818676785	subjective_assessment: Low
+GSM94131	No Cancer	GSM94131	age: 63	gender: M	smoking_status: quit for 10 years or greater	packyears: 0.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.132216905	subjective_assessment: Medium
+GSM94132	No Cancer	GSM94132	age: 49	gender: F	smoking_status: quit less than 10 years	packyears: 34	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -1.589893187	subjective_assessment: Medium
+GSM94133	No Cancer	GSM94133	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94134	No Cancer	GSM94134	age: 53	gender: F	smoking_status: quit less than 10 years	packyears: 40	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -9.834443565	subjective_assessment: Medium
+GSM94135	No Cancer	GSM94135	age: 76	gender: M	smoking_status: quit for 10 years or greater	packyears: 35	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 7.224242364	subjective_assessment: Medium
+GSM94136	No Cancer	GSM94136	age: 50	gender: F	smoking_status: quit less than 10 years	packyears: 5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -8.776947785	subjective_assessment: High
+GSM94137	No Cancer	GSM94137	age: 36	gender: F	smoking_status: quit less than 10 years	packyears: 10.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 7.078621899	subjective_assessment: Low
+GSM94138	No Cancer	GSM94138	age: 74	gender: M	smoking_status: quit for 10 years or greater	packyears: 60	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -6.009579711	subjective_assessment: Medium
+GSM94139	No Cancer	GSM94139	age: 76	gender: M	smoking_status: quit for 10 years or greater	packyears: 31	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 9.971680416	subjective_assessment: Low
+GSM94140	No Cancer	GSM94140	age: 79	gender: M	smoking_status: quit less than 10 years	packyears: 64	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 0.853911475	subjective_assessment: Medium
+GSM94141	No Cancer	GSM94141	age: 71	gender: M	smoking_status: quit less than 10 years	packyears: 80	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 0.221291146	subjective_assessment: Medium
+GSM94142	No Cancer	GSM94142	age: 51	gender: M	smoking_status: quit less than 10 years	packyears: 45	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -8.121346602	subjective_assessment: Medium
+GSM94143	No Cancer	GSM94143	age: 71	gender: M	smoking_status: quit less than 10 years	packyears: 61	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.324563602	subjective_assessment: Medium
+GSM94144	No Cancer	GSM94144	age: 46	gender: M	smoking_status: quit less than 10 years	packyears: 24	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.171956031	subjective_assessment: Medium
+GSM94145	No Cancer	GSM94145	age: 69	gender: M	smoking_status: quit less than 10 years	packyears: 25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -6.919123696	subjective_assessment: Medium
+GSM94146	No Cancer	GSM94146	age: 58	gender: M	smoking_status: quit less than 10 years	packyears: 22	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -11.27863766	subjective_assessment: High
+GSM94147	No Cancer	GSM94147	age: 74	gender: M	smoking_status: quit for 10 years or greater	packyears: 100	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -1.656033397	subjective_assessment: Medium
+GSM94148	No Cancer	GSM94148	age: 69	gender: M	smoking_status: quit less than 10 years	packyears: 114	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -5.993439072	subjective_assessment: High
+GSM94155	Cancer	GSM94155	age: 74	gender: M	smoking_status: quit for 10 years or greater	packyears: 53	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -13.20069968	subjective_assessment: High
+GSM94156	Cancer	GSM94156	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94157	Cancer	GSM94157	age: 56	gender: M	smoking_status: quit less than 10 years	packyears: 45	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -8.580340741	subjective_assessment: Medium
+GSM94160	Cancer	GSM94160	age: 73	gender: M	smoking_status: quit less than 10 years	packyears: 48	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -13.5270232	subjective_assessment: High
+GSM94161	Cancer	GSM94161	age: 51	gender: M	smoking_status: quit less than 10 years	packyears: 41	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -6.393898824	subjective_assessment: Medium
+GSM94162	Cancer	GSM94162	age: 58	gender: M	smoking_status: quit less than 10 years	packyears: 40	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 0.666502549	subjective_assessment: High
+GSM94163	Cancer	GSM94163	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94164	Cancer	GSM94164	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 78	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -7.285956695	subjective_assessment: High
+GSM94165	Cancer	GSM94165	age: 74	gender: M	smoking_status: quit for 10 years or greater	packyears: 50	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -10.2549837	subjective_assessment: High
+GSM94166	Cancer	GSM94166	age: 71	gender: F	smoking_status: quit less than 10 years	packyears: 55	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -10.72323116	subjective_assessment: High
+GSM94167	Cancer	GSM94167	age: 75	gender: M	smoking_status: quit less than 10 years	packyears: 53	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 9.771646988	subjective_assessment: Medium
+GSM94168	Cancer	GSM94168	age: 70	gender: M	smoking_status: quit less than 10 years	packyears: 105	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -10.53655546	subjective_assessment: High
+GSM94169	Cancer	GSM94169	age: 60	gender: M	smoking_status: quit less than 10 years	packyears: 72	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -2.838248784	subjective_assessment: High
+GSM94170	Cancer	GSM94170	age: 79	gender: M	smoking_status: quit less than 10 years	packyears: 90	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -10.00290596	subjective_assessment: High
+GSM94171	Cancer	GSM94171	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 64	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -6.639908961	subjective_assessment: High
+GSM94172	Cancer	GSM94172	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 82	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -12.9210511	subjective_assessment: Low
+GSM94173	Cancer	GSM94173	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94174	Cancer	GSM94174	age: 83	gender: M	smoking_status: quit less than 10 years	packyears: 80	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -0.119513816	subjective_assessment: High
+GSM94175	Cancer	GSM94175	NA	NA	NA	NA	NA	NA	NA	NA
+GSM94176	Cancer	GSM94176	age: 80	gender: M	smoking_status: quit for 10 years or greater	packyears: 23	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -4.640758193	subjective_assessment: High
+GSM94177	Cancer	GSM94177	age: 49	gender: F	smoking_status: quit less than 10 years	packyears: 32	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -2.51663208	subjective_assessment: High
+GSM94178	Cancer	GSM94178	NA	NA	NA	NA	NA	NA	NA	NA
+GSM98767	Cancer	GSM98767	age: 77	gender: M	smoking_status: quit less than 10 years	packyears: 51	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.09077463	subjective_assessment: Medium
+GSM98768	Cancer	GSM98768	age: 72	gender: F	smoking_status: quit for 10 years or greater	packyears: 22	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -9.51562105	subjective_assessment: High
+GSM98769	Cancer	GSM98769	age: 57	gender: M	smoking_status: quit less than 10 years	packyears: 19.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -1.48036198	subjective_assessment: High
+GSM98770	Cancer	GSM98770	age: 78	gender: F	smoking_status: quit for 10 years or greater	packyears: 18	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -10.76565815	subjective_assessment: High
+GSM98771	Cancer	GSM98771	age: 57	gender: F	smoking_status: quit less than 10 years	packyears: 76	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 11.02603435	subjective_assessment: High
+GSM98772	Cancer	GSM98772	age: 83	gender: M	smoking_status: quit less than 10 years	packyears: 57	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.6004259	subjective_assessment: High
+GSM98773	Cancer	GSM98773	age: 63	gender: M	smoking_status: quit less than 10 years	packyears: 35	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -0.46514582	subjective_assessment: High
+GSM98774	Cancer	GSM98774	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 37.5	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: 2.85811525	subjective_assessment: High
+GSM98775	Cancer	GSM98775	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 75	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -5.23797485	subjective_assessment: Low
+GSM98776	Cancer	GSM98776	age: 67	gender: F	smoking_status: quit for 10 years or greater	packyears: 20	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.83355405	subjective_assessment: Medium
+GSM98777	Cancer	GSM98777	age: 58	gender: M	smoking_status: quit less than 10 years	packyears: 11	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.05429499	subjective_assessment: High
+GSM98778	Cancer	GSM98778	age: 55	gender: M	smoking_status: quit less than 10 years	packyears: 78	bronch_status: diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -4.96869603	subjective_assessment: High
+GSM98779	Cancer	GSM98779	age: 86	gender: F	smoking_status: quit less than 10 years	packyears: 46	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -11.3283607	subjective_assessment: High
+GSM98780	Cancer	GSM98780	age: 70	gender: M	smoking_status: quit less than 10 years	packyears: 108	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -8.24676127	subjective_assessment: High
+GSM98781	Cancer	GSM98781	age: 46	gender: M	smoking_status: quit less than 10 years	packyears: 33	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -1.48224173	subjective_assessment: High
+GSM98782	Cancer	GSM98782	age: 78	gender: M	smoking_status: quit for 10 years or greater	packyears: 85	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 1	biomarker_score: -13.8658914	subjective_assessment: High
+GSM98783	Cancer	GSM98783	age: 70	gender: F	smoking_status: quit for 10 years or greater	packyears: 9	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -2.83938372	subjective_assessment: Medium
+GSM98784	Cancer	GSM98784	age: 53	gender: M	smoking_status: quit less than 10 years	packyears: 59	bronch_status: diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -14.74199474	subjective_assessment: High
+GSM98785	No Cancer	GSM98785	age: 68	gender: F	smoking_status: quit less than 10 years	packyears: 53	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.00889279	subjective_assessment: Low
+GSM98786	No Cancer	GSM98786	age: 66	gender: M	smoking_status: quit less than 10 years	packyears: 85	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.90310693	subjective_assessment: Medium
+GSM98787	No Cancer	GSM98787	age: 47	gender: M	smoking_status: quit less than 10 years	packyears: 39.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.12123969	subjective_assessment: Low
+GSM98788	No Cancer	GSM98788	age: 64	gender: F	smoking_status: quit less than 10 years	packyears: 24.25	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 3.59185548	subjective_assessment: Medium
+GSM98789	No Cancer	GSM98789	age: 59	gender: M	smoking_status: quit for 10 years or greater	packyears: 5.5	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.18512013	subjective_assessment: High
+GSM98790	No Cancer	GSM98790	age: 48	gender: F	smoking_status: quit less than 10 years	packyears: 64	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 16.30109601	subjective_assessment: Medium
+GSM98791	No Cancer	GSM98791	age: 68	gender: M	smoking_status: quit less than 10 years	packyears: 105	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -9.04586768	subjective_assessment: Low
+GSM98792	No Cancer	GSM98792	age: 45	gender: M	smoking_status: quit less than 10 years	packyears: 16	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 3.48688951	subjective_assessment: Low
+GSM98793	No Cancer	GSM98793	age: 53	gender: M	smoking_status: quit less than 10 years	packyears: 70	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -3.42293236	subjective_assessment: Low
+GSM98794	No Cancer	GSM98794	age: 66	gender: M	smoking_status: quit less than 10 years	packyears: 4	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 2.01252959	subjective_assessment: Low
+GSM98795	No Cancer	GSM98795	age: 63	gender: M	smoking_status: quit less than 10 years	packyears: 84	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -11.70404732	subjective_assessment: High
+GSM98796	No Cancer	GSM98796	age: 45	gender: F	smoking_status: quit less than 10 years	packyears: 14	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -11.01190254	subjective_assessment: Low
+GSM98797	No Cancer	GSM98797	age: 80	gender: M	smoking_status: quit for 10 years or greater	packyears: 65	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 10.34996328	subjective_assessment: Low
+GSM98798	No Cancer	GSM98798	age: 65	gender: M	smoking_status: quit less than 10 years	packyears: 99	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 6.95937086	subjective_assessment: Medium
+GSM98799	No Cancer	GSM98799	age: 79	gender: F	smoking_status: quit less than 10 years	packyears: 180	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 12.78936503	subjective_assessment: Medium
+GSM98800	No Cancer	GSM98800	age: 71	gender: M	smoking_status: quit less than 10 years	packyears: 45	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: 8.07304794	subjective_assessment: Low
+GSM98801	No Cancer	GSM98801	age: 71	gender: M	smoking_status: quit less than 10 years	packyears: 67	bronch_status: non-diagnostic	mass_size_greater_than_3cm: 0	biomarker_score: -0.00143528	subjective_assessment: Medium
+GSM98871	NA	GSM98871	NA	NA	NA	NA	NA	NA	NA	NA
+GSM98872	NA	GSM98872	NA	NA	NA	NA	NA	NA	NA	NA
+GSM98873	NA	GSM98873	NA	NA	NA	NA	NA	NA	NA	NA
+GSM98874	NA	GSM98874	NA	NA	NA	NA	NA	NA	NA	NA
+GSM98875	NA	GSM98875	NA	NA	NA	NA	NA	NA	NA	NA

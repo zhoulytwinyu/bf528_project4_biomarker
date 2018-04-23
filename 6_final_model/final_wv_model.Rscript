@@ -1,0 +1,79 @@
+#!/usr/bin/env Rscript
+source("wv.R")
+library("AUC")
+
+annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
+train_df <- readRDS("GSE4115_probeset_expression.TRAINING.Rdata")
+validation_df <- readRDS("GSE4115_probeset_expression.VALIDATION.Rdata")
+
+DEGs.auc <- scan("DEG_under_max_AUC.n90.probeid.txt",what="character")
+DEGs.err <- scan("DEG_under_min_err.n65.probeid.txt",what="character")
+
+#Max AUC model
+model.auc <- wv.model(train_df[DEGs.auc,],factor(annot_df[colnames(train_df),"CANCER_STATUS"]))
+err.auc <- mean((wv.predict(model.auc,validation_df)==0) !=
+                (annot_df[colnames(validation_df),"CANCER_STATUS"]=="Cancer")
+                )
+sensitivity.auc <- mean((annot_df[colnames(validation_df),"CANCER_STATUS"]=="Cancer")[wv.predict(model.auc,validation_df)==0])
+specificity.auc <- mean((annot_df[colnames(validation_df),"CANCER_STATUS"]=="No Cancer")[wv.predict(model.auc,validation_df)==1])
+roc.auc <- roc(wv.predict(model.auc,
+                          validation_df,
+                          type="prob"
+                          ),
+               factor(annot_df[colnames(validation_df),"CANCER_STATUS"])
+               )
+auc.auc <- auc(roc.auc)
+#Confusion matrix
+write.csv(table(sapply( wv.predict(model.auc,validation_df),
+                        function(x){
+                          if (x==0){return("Cancer")}
+                          if (x==1){return("No Cancer")}
+                        }),
+                annot_df[colnames(validation_df),"CANCER_STATUS"]),
+          "Confusion_matrix_under_max_auc.table.txt",
+          quote=FALSE)
+#Plot
+png("roc_under_max_auc.plot.png")
+plot(roc.auc,
+     main="ROC of max AUC wv model",
+     sub=paste("AUC:",round(auc.auc,3),
+               " Error:",round(err.auc,3),
+               " Sens.:",round(sensitivity.auc,3),
+               " Spec.:",round(specificity.auc,3),
+               sep=''),
+     )
+dev.off()
+
+#Min error model
+model.err <- wv.model(train_df[DEGs.err,],factor(annot_df[colnames(train_df),"CANCER_STATUS"]))
+err.err <- mean((wv.predict(model.err,validation_df)==0) !=
+                (annot_df[colnames(validation_df),"CANCER_STATUS"]=="Cancer")
+                )
+sensitivity.err <- mean((annot_df[colnames(validation_df),"CANCER_STATUS"]=="Cancer")[wv.predict(model.err,validation_df)==0])
+specificity.err <- mean((annot_df[colnames(validation_df),"CANCER_STATUS"]=="No Cancer")[wv.predict(model.err,validation_df)==1])
+roc.err <- roc(wv.predict(model.err,
+                          validation_df,
+                          type="prob"
+                          ),
+               factor(annot_df[colnames(validation_df),"CANCER_STATUS"])
+               )
+auc.err <- auc(roc.err)
+write.csv(table(sapply( wv.predict(model.err,validation_df),
+                        function(x){
+                          if (x==0){return("Cancer")}
+                          if (x==1){return("No Cancer")}
+                        }),
+                annot_df[colnames(validation_df),"CANCER_STATUS"]),
+          "Confusion_matrix_under_min_err.table.txt",
+          quote=FALSE)
+#Plot
+png("roc_under_min_err.plot.png")
+plot(roc.err,
+     main="ROC of min error wv model",
+     sub=paste("AUC:",round(auc.err,3),
+               " Error:",round(err.err,3),
+               " Sens.:",round(sensitivity.err,3),
+               " Spec.:",round(specificity.err,3),
+               sep=''),
+     )
+dev.off()

@@ -1,0 +1,53 @@
+#!/usr/bin/env Rscript
+
+annot_file <- "GSE4115_clinical_annotation.txt"
+annot_df <- read.csv(annot_file,as.is=TRUE,sep='\t',header=1,row.names=1)
+  #Read in dataframes as is: no convertion to factors that prevent strplit()
+
+#Strsplit on these columns
+for (i in c("AGE","GENDER",
+            "SMOKING_STATUS","PACK_YEARS",
+            "DIAG_BRONCH","MASS_SIZE",
+            "BIOMARKER_SCORE","PRETEST_PROBABILITY"
+            )
+  ){
+  splt <- strsplit(annot_df[,i],': ')
+  splt <- sapply(splt,
+                 function(vec){
+                   return(vec[2])
+                 }
+  )
+  annot_df[,i] <- splt
+}
+
+#Convert columns to factors
+for (i in c("GENDER","SMOKING_STATUS",
+            "SMOKING_STATUS","DIAG_BRONCH",
+            "PRETEST_PROBABILITY"
+            )
+  ){
+  annot_df[,i] <- factor(annot_df[,i])
+}
+
+#Convert columns to numerics
+for (i in c("AGE","PACK_YEARS",
+            "MASS_SIZE","BIOMARKER_SCORE"
+            )
+  ){
+  annot_df[,i] <- as.numeric(annot_df[,i])
+}
+
+#Remove empty CANCER_STATUS, SMOKING_STATUS, and PACK_YEARS
+annot_df <- subset(annot_df,
+                   ! is.na(CANCER_STATUS) &
+                   ! is.na(SMOKING_STATUS) &
+                   ! is.na(PACK_YEARS))
+
+cat("Summary:\n")
+head(annot_df)
+cat("Column classes\n")
+sapply(annot_df, class)
+
+output <- "GSE4115_clinical_annotation.CLEANED.Rdata"
+cat("Saving to",output,'\n')
+saveRDS(annot_df,output)

@@ -1,0 +1,30 @@
+#!/usr/bin/env Rscript
+#Read expression file
+probeset_file <- "GSE4115_probeset_expression.txt"
+probeset_df <- read.csv(probeset_file,sep='\t',header=1,row.names=1)
+#Read annotation file
+annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
+
+#Ignore samples with incomplete annotation
+probeset_df <- probeset_df[,row.names(annot_df)]
+
+#Calc z scores
+probeset_df.zscore <- t(scale(t(probeset_df)))
+#Calc sample average z scores
+avg.zscore <- colMeans(probeset_df.zscore)
+#Remove samples with top 15% abs avg z score
+cutoff <- quantile(abs(avg.zscore),0.85)
+samples.keep <- (avg.zscore <= cutoff & avg.zscore >= -cutoff)
+probeset_df.keep <- probeset_df[,samples.keep]
+
+#Save data
+cat("Total samples:",ncol(probeset_df),'\n')
+cat("Samples kept:",ncol(probeset_df.keep),'\n')
+saveRDS(probeset_df.keep,"GSE4115_probeset_expression.FILTERED.Rdata")
+
+#Plot histogram
+png("sample_average_z_scores.hist.png")
+hist(avg.zscore,main="Sample average Z-scores",xlab="average Z-scores",ylab="Count")
+abline(v=cutoff,col="red")
+abline(v=-cutoff,col="red")
+dev.off()

@@ -1,0 +1,83 @@
+#!/usr/bin/env Rscript
+library(limma)
+library(sva)
+library(AUC)
+source("wv.R")
+set.seed(1990)
+
+#Read expression matrix
+training_df <- readRDS("GSE4115_probeset_expression.TRAINING.Rdata")
+nsample <- ncol(training_df)
+
+#Read annotation
+annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
+
+#Cross validation
+cv_results <-lapply(seq(5,100,5),function(n) {
+  cat("Working on top ",n," genes",'\n',sep='')
+  rep=100
+  instance_dat <- lapply(1:rep,function(i){
+    cat("\r\r\r",i,sep='')
+    #Split internal training and test set
+    itrain.ind <- sample(nsample,size=0.8*nsample,replace=FALSE)
+    itrain_df <- training_df[,itrain.ind]
+    test_df <- training_df[,-itrain.ind]
+    #ANOVA: design matrix
+    design <- model.matrix(~CANCER_STATUS+SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
+    alt_design <- model.matrix(~SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
+    #ANOVA: p value and p adj
+    anova.p <- f.pvalue(as.matrix(itrain_df),design,alt_design)
+    anova.padj <- p.adjust(anova.p,method="BH")
+    #T statistics moderated
+    fit <- lmFit(log(as.matrix(itrain_df)),design)
+    fit <- eBayes(fit)
+    fit.t <- fit$t[,"CANCER_STATUSNo Cancer"]
+    #Top 5 genes
+    tmp_df <- data.frame(probe=as.character(rownames(itrain_df)),
+                         padj=anova.padj,
+                         t=fit.t,
+                         stringsAsFactors = FALSE)
+    up_df <- tmp_df[tmp_df$t>0,]
+    up_df <- up_df[order(up_df$padj)[1:n],]
+    down_df <- tmp_df[tmp_df$t<0,]
+    down_df <- down_df[order(down_df$padj)[1:n],]
+    top_deg <- c(up_df$probe,down_df$probe)
+    #Fit and test
+    fit <- wv.model(as.matrix(itrain_df[top_deg,]),
+                    annot_df[colnames(itrain_df),"CANCER_STATUS"]=="Cancer"
+                    )
+    pred <- wv.predict(fit,test_df,type="prob")
+    auc <- auc(roc(pred,
+                   factor(annot_df[colnames(test_df),
+                                   "CANCER_STATUS"]
+                          )
+                   )
+               )
+    err <- mean((wv.predict(fit,test_df)==1) !=
+                (annot_df[colnames(test_df),"CANCER_STATUS"]=="Cancer")
+                )
+    up_deg <- up_df$probe
+    down_deg <- down_df$probe
+    return(list(auc=auc,
+                err=err,
+                up_deg=up_deg,
+                down_deg=down_deg
+                )
+          )
+  })
+  err <- sapply(instance_dat,function(l){return(l$err)})
+  auc <- sapply(instance_dat,function(l){return(l$auc)})
+  up_deg_table <- table(unlist(sapply(instance_dat,function(l){return(l$up_deg)})))
+  down_deg_table <- table(unlist(sapply(instance_dat,function(l){return(l$down_deg)})))
+  mean_auc <- mean(auc)
+  mean_err <- mean(err)
+  return(list(top_num=n,
+              auc=mean_auc,
+              err=mean_err,
+              up_deg_table=up_deg_table,
+              down_deg_table=down_deg_table
+              )
+         )
+})
+
+saveRDS(cv_results,"CV_results.Rdata")

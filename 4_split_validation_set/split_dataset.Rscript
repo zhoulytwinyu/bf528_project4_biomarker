@@ -1,0 +1,19 @@
+#!/usr/bin/env Rscript
+set.seed(10086)
+#Read data from step 3
+filtered_probeset_df <- readRDS("GSE4115_probeset_expression.FILTERED.Rdata")
+
+#Randomly generate indecis to keep
+nsample <- ncol(filtered_probeset_df)
+validation.ind <- sample(nsample,size=nsample*0.30,replace=FALSE)
+
+#Validation set
+filtered_probeset_df.validation <- filtered_probeset_df[,validation.ind]
+cat("Validation set size:",ncol(filtered_probeset_df.validation),'\n')
+saveRDS(filtered_probeset_df.validation,"GSE4115_probeset_expression.VALIDATION.Rdata")
+
+#Training set
+filtered_probeset_df.training <- filtered_probeset_df[,-validation.ind]
+cat("Training set size:",ncol(filtered_probeset_df.training),'\n')
+saveRDS(filtered_probeset_df.training,"GSE4115_probeset_expression.TRAINING.Rdata")
+
