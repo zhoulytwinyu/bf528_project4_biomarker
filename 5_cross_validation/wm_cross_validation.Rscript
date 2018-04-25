@@ -29,7 +29,7 @@ cv_results <-lapply(seq(5,100,5),function(n) {
     anova.p <- f.pvalue(as.matrix(itrain_df),design,alt_design)
     anova.padj <- p.adjust(anova.p,method="BH")
     #T statistics moderated
-    fit <- lmFit(log(as.matrix(itrain_df)),design)
+    fit <- lmFit(as.matrix(itrain_df),design)
     fit <- eBayes(fit)
     fit.t <- fit$t[,"CANCER_STATUSNo Cancer"]
     #Top 5 genes
