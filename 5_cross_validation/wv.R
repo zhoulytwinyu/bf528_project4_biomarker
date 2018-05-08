@@ -6,13 +6,7 @@
 #' @param classlabel two-level factor of binary outcomes (0 or 1)
 #' @param correction should the Broad Institute's correction method be used?
 #'
-#' @examples
-#' \dontrun{
-#' library(multtest)
-#' data(golub)
-#' mod <- wv.model(golub,golub.cl,correction=T)
-#' }
-#' @export
+#' Downloaded From jperezrogers/rabbit
 
 wv.model <- function(data, classlabel, correction = TRUE){
 # Implementation of weighted voting code from Golub et al., Science, 1999.
