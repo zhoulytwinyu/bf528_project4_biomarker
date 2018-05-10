@@ -11,9 +11,10 @@ nsample <- ncol(training_df)
 
 #Read annotation
 annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
+annot_df$CANCER_STATUS <- factor(annot_df$CANCER_STATUS,levels=c("No Cancer", "Cancer"))
 
 #Cross validation
-cv_results <-lapply(seq(5,100,5),function(n) {
+cv_results <-lapply(seq(5,50,5),function(n) {
   cat("Working on top ",n," genes",'\n',sep='')
   rep=100
   instance_dat <- lapply(1:rep,function(i){
@@ -23,7 +24,7 @@ cv_results <-lapply(seq(5,100,5),function(n) {
     itrain_df <- training_df[,itrain.ind]
     test_df <- training_df[,-itrain.ind]
     #ANOVA: design matrix
-    design <- model.matrix(~relevel(CANCER_STATUS,ref="No Cancer")+SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
+    design <- model.matrix(~CANCER_STATUS+SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
     alt_design <- model.matrix(~SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
     #ANOVA: p value and p adj
     anova.p <- f.pvalue(as.matrix(itrain_df),design,alt_design)
@@ -49,8 +50,7 @@ cv_results <-lapply(seq(5,100,5),function(n) {
     pred <- wv.predict(fit,test_df,type="prob")
     auc <- auc(roc(pred,
                    factor(annot_df[colnames(test_df),
-                                   "CANCER_STATUS"]
-                          )
+                                   "CANCER_STATUS"]=="Cancer")
                    )
                )
     err <- mean((wv.predict(fit,test_df)==1) !=

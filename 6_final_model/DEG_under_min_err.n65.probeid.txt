@@ -1,1 +1,0 @@
-../5_cross_validation/DEG_under_min_err.n65.probeid.txt

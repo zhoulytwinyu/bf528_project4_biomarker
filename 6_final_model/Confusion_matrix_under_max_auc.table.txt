@@ -1,3 +1,3 @@
 ,Cancer,No Cancer
-Cancer,18,7
-No Cancer,6,10
+Cancer,17,7
+No Cancer,7,10

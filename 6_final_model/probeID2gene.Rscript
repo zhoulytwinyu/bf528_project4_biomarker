@@ -2,12 +2,12 @@
 library(hgu133a.db)
 library(AnnotationDbi)
 
-DEGs.auc <- scan("DEG_under_max_AUC.n90.probeid.txt",what="character")
-DEGs.err <- scan("DEG_under_min_err.n65.probeid.txt",what="character")
+DEGs.auc <- scan("DEG_under_max_AUC.probeid.txt",what="character")
+DEGs.err <- scan("DEG_under_min_err.probeid.txt",what="character")
 
 df.auc<-select(hgu133a.db, DEGs.auc, c("SYMBOL", "GENENAME"))
 df.err<-select(hgu133a.db, DEGs.err, c("SYMBOL", "GENENAME"))
 
-write.table(df.auc,"DEG_under_max_AUC.n90.gene.tsv",sep='\t',quote=FALSE,row.names=FALSE)
-write.table(df.err,"DEG_under_min_err.n65.gene.tsv",sep='\t',quote=FALSE,row.names=FALSE)
+write.table(df.auc,"DEG_under_max_AUC.gene.tsv",sep='\t',quote=FALSE,row.names=FALSE)
+write.table(df.err,"DEG_under_min_err.gene.tsv",sep='\t',quote=FALSE,row.names=FALSE)
 
