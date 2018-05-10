@@ -23,7 +23,7 @@ cv_results <-lapply(seq(5,100,5),function(n) {
     itrain_df <- training_df[,itrain.ind]
     test_df <- training_df[,-itrain.ind]
     #ANOVA: design matrix
-    design <- model.matrix(~CANCER_STATUS+SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
+    design <- model.matrix(~relevel(CANCER_STATUS,ref="No Cancer")+SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
     alt_design <- model.matrix(~SMOKING_STATUS+PACK_YEARS,data=annot_df[colnames(itrain_df),])
     #ANOVA: p value and p adj
     anova.p <- f.pvalue(as.matrix(itrain_df),design,alt_design)
@@ -31,7 +31,7 @@ cv_results <-lapply(seq(5,100,5),function(n) {
     #T statistics moderated
     fit <- lmFit(as.matrix(itrain_df),design)
     fit <- eBayes(fit)
-    fit.t <- fit$t[,"CANCER_STATUSNo Cancer"]
+    fit.t <- fit$t[,"CANCER_STATUSCancer"]
     #Top 5 genes
     tmp_df <- data.frame(probe=as.character(rownames(itrain_df)),
                          padj=anova.padj,

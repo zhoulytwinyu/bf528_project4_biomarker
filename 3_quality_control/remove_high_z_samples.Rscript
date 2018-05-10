@@ -14,6 +14,7 @@ probeset_df.zscore <- t(scale(t(probeset_df)))
 avg.zscore <- colMeans(probeset_df.zscore)
 #Remove samples with top 15% abs avg z score
 cutoff <- quantile(abs(avg.zscore),0.85)
+cat("cutoff:",cutoff,'\n')
 samples.keep <- (avg.zscore <= cutoff & avg.zscore >= -cutoff)
 probeset_df.keep <- probeset_df[,samples.keep]
 
@@ -24,7 +25,13 @@ saveRDS(probeset_df.keep,"GSE4115_probeset_expression.FILTERED.Rdata")
 
 #Plot histogram
 png("sample_average_z_scores.hist.png")
-hist(avg.zscore,main="Sample average Z-scores",xlab="average Z-scores",ylab="Count")
-abline(v=cutoff,col="red")
-abline(v=-cutoff,col="red")
+hist(avg.zscore,
+      main="Histogram of sample average Z-scores",
+      xlab="average Z-scores",
+      ylab="Count",
+      col="steelblue1",
+      breaks=19,
+      xlim=c(-0.5,0.5))
+abline(v=cutoff,col="red",lty=2)
+abline(v=-cutoff,col="red",lty=2)
 dev.off()
