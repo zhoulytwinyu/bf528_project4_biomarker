@@ -4,8 +4,8 @@ library(pheatmap)
 annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
 expression_df <- readRDS("GSE4115_probeset_expression.FILTERED.Rdata")
 
-DEGs.auc <- scan("DEG_under_max_AUC.n90.probeid.txt",what="character")
-DEGs.err <- scan("DEG_under_min_err.n65.probeid.txt",what="character")
+DEGs.auc <- scan("DEG_under_max_AUC.probeid.txt",what="character")
+DEGs.err <- scan("DEG_under_min_err.probeid.txt",what="character")
 
 png("heatmap_under_max_auc.plot.png")
 pheatmap(as.matrix(expression_df[DEGs.auc,]),annotation=annot_df["CANCER_STATUS"],scale="row")
