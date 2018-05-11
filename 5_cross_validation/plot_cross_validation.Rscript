@@ -31,7 +31,7 @@ dev.off()
 png("DEG_under_max_AUC.plot.png",width=800,height=450)
 par(mfrow=c(1,2))
 up_deg_table.auc <- cv_results[[max_auc_ind]]$up_deg_table
-up_deg_table.auc <- sort(up_deg_table,decreasing=TRUE)
+up_deg_table.auc <- sort(up_deg_table.auc,decreasing=TRUE)
 plot(up_deg_table.auc,main="AUC: Up regulated DEG",xlab="probe id",ylab="count")
 abline(v=top_num[max_auc_ind],col="red")
 down_deg_table.auc <- cv_results[[max_auc_ind]]$down_deg_table
