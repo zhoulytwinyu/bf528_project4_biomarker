@@ -42,8 +42,7 @@ dev.off()
 write(c(names(up_deg_table.auc[1:top_num[max_auc_ind]]),
         names(down_deg_table.auc[1:top_num[max_auc_ind]])
         ),
-      paste("DEG_under_max_AUC.n",
-            top_num[max_auc_ind],
+      paste("DEG_under_max_AUC",
             ".probeid.txt",
             sep=''
             )
@@ -64,8 +63,7 @@ dev.off()
 write(c(names(up_deg_table.err[1:top_num[min_err_ind]]),
         names(down_deg_table.err[1:top_num[min_err_ind]])
         ),
-      paste("DEG_under_min_err.n",
-            top_num[min_err_ind],
+      paste("DEG_under_min_err",
             ".probeid.txt",
             sep=''
             )
