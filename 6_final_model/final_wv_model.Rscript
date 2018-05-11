@@ -6,8 +6,8 @@ annot_df <- readRDS("GSE4115_clinical_annotation.CLEANED.Rdata")
 train_df <- readRDS("GSE4115_probeset_expression.TRAINING.Rdata")
 validation_df <- readRDS("GSE4115_probeset_expression.VALIDATION.Rdata")
 
-DEGs.auc <- scan("DEG_under_max_AUC.n90.probeid.txt",what="character")
-DEGs.err <- scan("DEG_under_min_err.n65.probeid.txt",what="character")
+DEGs.auc <- scan("DEG_under_max_AUC.probeid.txt",what="character")
+DEGs.err <- scan("DEG_under_min_err.probeid.txt",what="character")
 
 #Max AUC model
 model.auc <- wv.model(train_df[DEGs.auc,],factor(annot_df[colnames(train_df),"CANCER_STATUS"]))
